@@ -1,11 +1,14 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ввведите количество элементов: ");
+        int n = scanner.nextInt();
         Random random = new Random(0);
         List list = new List();
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < n; i++)
             list.push_back(random.nextInt(100));
             list.print();
         System.out.println();
