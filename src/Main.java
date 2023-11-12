@@ -21,6 +21,8 @@ public class Main {
         list.erase(3);
         list.pop_front();
         list.print();
+        list.clear();
+        list.print();
 
 
     }

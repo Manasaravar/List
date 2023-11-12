@@ -116,7 +116,6 @@ public class List {
         head.finalize();
         head = null;
         tail = null;
-        return;
         }
         else  {
             head = head.getNext();
@@ -132,7 +131,9 @@ public class List {
     }
     public void clear(){
         while (head != null)
-            head = tail = null;
+            pop_front();
+        System.out.println("ListClear:\t" + Integer.toHexString(this.hashCode()));
+
     }
     // Вставка
     public void insert (int data, int index){
