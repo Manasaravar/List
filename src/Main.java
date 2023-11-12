@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Ввведите количество элементов: ");
+        System.out.println("Введите количество элементов: ");
         int n = scanner.nextInt();
         Random random = new Random(0);
         List list = new List();

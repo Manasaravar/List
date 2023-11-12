@@ -89,10 +89,11 @@ public class List {
         if (head == null && tail == null) {
             head = tail = new Element(data);
         } else {
-            Element New = new Element(data);
+            /*Element New = new Element(data);
             New.setPrev(tail);
             tail.setNext(New);
-            tail = New;
+            tail = New;*/
+            tail = tail.next = new Element(data,null,tail);
         }
         size++;
     }
